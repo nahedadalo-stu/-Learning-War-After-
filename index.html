@@ -1,57 +1,27 @@
 <!DOCTYPE html>
 
-<!-- اللغة و اتجاه النص -->
+
 <html lang="ar" dir="rtl">
 <head>
-    <!-- ظهور اللغة بشكل صحيح -->
     <meta charset="UTF-8">
-    
-    <!--  عرض الصفحة يتناسب مع عرض شاشة الجوال او التابلت او الكمبيوتر-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- عنوان الصفحة  -->
     <title>Alqaser Space | مساحة القصر التعليمية</title>
-    
-    <!-- --- استدعاء المكتبات والملفات الخارجية --- -->
-    
-    <!-- استدعاء خط "Cairo" من Google Fonts لتحسين شكل الخطوط العربية -->
+
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- استدعاء ملف CSS الخاص بمكتبة Bootstrap (نسخة RTL لدعم اللغة العربية) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
-    
-    <!-- استدعاء مكتبة Font Awesome لعرض الأيقونات (مثل أيقونة القلب والواي فاي) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <!-- استدعاء CSS لكتابة التنسيقات فيه-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <!-- استخدمنا كلاسات Bootstrap: خلفية بيضاء، ظل خفيف، يلتصق بالأعلى عند التمرير، حشوة داخلية عمودية -->
     <header class="bg-white shadow-sm sticky-top py-3">
-        <!-- حاوية لتوسيط المحتوى وترك هوامش على الجانبين -->
         <div class="container text-center">
-            
-            <!-- شعار الموقع: صورة دائرية، هامش سفلي، إطار أزرق -->
             <img src="image/شعار المساحة.jpeg" alt="لوغو" width="60" height="60" class="rounded-circle mb-2 border border-primary">
-            
-            <!-- اسم الموقع: خط عريض، هامش سفلي -->
             <h3 class="fw-bold mb-2">Alqaser Space</h3>
-            
-            <!-- شريط التنقل: استخدمنا مكون navbar من Bootstrap لتوسيعه وعرضه بشكل مناسب -->
             <nav class="navbar navbar-expand-lg justify-content-center p-0">
-                <!-- قائمة التنقل: خط عريض، مسافة بين العناصر على الشاشات الكبيرة -->
                 <ul class="navbar-nav fw-bold gap-lg-4">
-                    
-                    <!-- عنصر في القائمة: رابط إلى قسم "الرئيسية" -->
                     <li class="nav-item"><a class="nav-link section-link" href="#hero">الرئيسية</a></li>
-                    
-                    <!-- عنصر قائمة منسدلة (Dropdown) -->
                     <li class="nav-item dropdown custom-dropdown">
-                        <!-- الرابط الذي يظهر دائماً ويفتح القائمة عند النقر -->
                         <a class="nav-link dropdown-toggle section-link" href="#">عن المساحة</a>
-                        <!-- القائمة المنسدلة المخفية: بدون إطار، ظل، حركة انزلاق، محاذاة لليمين -->
                         <ul class="dropdown-menu border-0 shadow animate-slide text-end">
                             <li><a class="dropdown-item" href="#mission">رسالتنا</a></li>
                             <li><a class="dropdown-item" href="#vision">رؤيتنا</a></li>
@@ -59,11 +29,9 @@
                         </ul>
                     </li>
 
-                    <!-- باقي عناصر قائمة التنقل -->
                     <li class="nav-item"><a class="nav-link section-link" href="#services">الخدمات</a></li>
                     <li class="nav-item"><a class="nav-link section-link" href="#media">الاثر التعليمي</a></li>
                     <li class="nav-item"><a class="nav-link section-link" href="#team">فريق الإدارة</a></li>
-                    <!-- عنصر بلون أحمر لجذب الانتباه -->
                     <li class="nav-item"><a class="nav-link section-link text-danger" href="#contact">تواصل معنا</a></li>
                 </ul>
             </nav>
@@ -72,30 +40,23 @@
    
 
    
-    <!-- قسم يأخذ كامل ارتفاع الشاشة، ويقوم بتوسيط المحتوى عمودياً -->
     <section id="hero" class="hero-section d-flex align-items-center">
         <div class="container text-center text-white">
-            <!-- عنوان رئيسي كبير وبارز -->
             <h1 class="display-4 fw-bold mb-3">مساحة القصر التعليمية</h1>
-            <!-- نص فرعي بحجم أصغر -->
             <p class="lead fs-3 mb-0">نحو تعليم مستدام وبيئة تعليمية آمنة لطلابنا في غزة</p>
         </div>
     </section>
    
 
-    <!-- === بداية المحتوى الرئيسي للصفحة === -->
     <main class="container py-5">
         
-        <!-- --- قسم رسالتنا --- -->
         <section id="mission" class="section-box text-center">
             <h2 class="section-title">رسالتنا</h2>
-            <!-- بطاقة معلومات: تتوسط أفقياً، خط عريض -->
             <div class="info-card mx-auto fw-bold">
                 تعزيز طلاب غزة من خلال توفير بيئة تعليمية داعمة ومساحات تعلم فعالة وبرامج تدريبية وتوجيه مهني عملي تسهيلاً لمسارهم التعليمي وتنمية قدراتهم لبناء مستقبل أرقى.
             </div>
         </section>
 
-        <!-- --- قسم رؤيتنا --- -->
         <section id="vision" class="section-box text-center">
             <h2 class="section-title">رؤيتنا</h2>
             <div class="info-card mx-auto fw-bold">
@@ -103,27 +64,21 @@
             </div>
         </section>
 
-        <!-- --- قسم قيمنا --- -->
         <section id="values" class="section-box text-center">
             <h2 class="section-title">قيمنا</h2>
-            <!-- صف (Row) من نظام Grid لعرض القيم بجانب بعضها -->
             <div class="row g-4 justify-content-center text-end">
-                <!-- عمود (Column) يأخذ 4 وحدات من 12 على الشاشات المتوسطة فأكبر -->
                 <div class="col-md-4">
-                    <!-- بطاقة القيمة: حشوة، خلفية بيضاء، حواف دائرية، ظل، إطار سفلي أزرق، تأخذ كامل ارتفاع الصف -->
                     <div class="value-item p-4 bg-white rounded-4 shadow-sm border-bottom border-primary border-4 h-100">
                         <h5 class="fw-bold text-primary"><i class="fas fa-heart me-2"></i>الإنسان أولاً</h5>
                         <p>نضع الطالب في قلب كل قرار لأن الإنسان هو جوهر أي تعليم حقيقي.</p>
                     </div>
                 </div>
-                <!-- عمود ثانٍ -->
                 <div class="col-md-4">
                     <div class="value-item p-4 bg-white rounded-4 shadow-sm border-bottom border-primary border-4 h-100">
                         <h5 class="fw-bold text-primary"><i class="fas fa-shield-alt me-2"></i>الشفافية</h5>
                         <p>نلتزم بالوضوح والصدق في كل تعامل لضمان الثقة والاستقرار المجتمعي.</p>
                     </div>
                 </div>
-                <!-- عمود ثالث -->
                 <div class="col-md-4">
                     <div class="value-item p-4 bg-white rounded-4 shadow-sm border-bottom border-primary border-4 h-100">
                         <h5 class="fw-bold text-primary"><i class="fas fa-seedling me-2"></i>الأمل والصمود</h5>
@@ -133,12 +88,9 @@
             </div>
         </section>
 
-        <!-- --- قسم خدماتنا --- -->
         <section id="services" class="section-box">
             <h2 class="section-title text-center d-block">خدماتنا</h2>
-            <!-- صف لعرض الخدمات -->
             <div class="row g-3 text-end">
-                <!-- عمود يأخذ 6 وحدات (نصف العرض) على الشاشات المتوسطة فأكبر -->
                 <div class="col-md-6"><div class="service-card"><i class="fas fa-wifi text-primary me-2"></i> مساحات دراسية مجانية (إنترنت وكهرباء)</div></div>
                 <div class="col-md-6"><div class="service-card"><i class="fas fa-print text-primary me-2"></i> طباعة ملفات مجانية (جامعية وثانوية)</div></div>
                 <div class="col-md-6"><div class="service-card"><i class="fas fa-lightbulb text-primary me-2"></i> توجيه مهني لطلاب سوق العمل والمهارات</div></div>
@@ -146,28 +98,19 @@
             </div>
         </section>
 
-        <!-- --- قسم الأثر التعليمي (Media) --- -->
         <section id="media" class="section-box">
             <h2 class="section-title text-center d-block">الاثر التعليمي </h2>
-            <!-- صف لعرض الفيديو والجدول بجانب بعضهما -->
             <div class="row g-4 align-items-center text-end">
-                <!-- عمود الفيديو -->
                 <div class="col-md-6">
-                    <!-- وسم الفيديو: عرض 100%، أزرار تحكم، حواف دائرية، ظل -->
                     <video width="100%" controls class="rounded-4 shadow">
-                        <!-- مصدر الفيديو -->
                         <source src="vedio/فيديو المساحة.mp4" type="video/mp4">
                     </video>
                 </div>
-                <!-- عمود الجدول -->
                 <div class="col-md-6">
-                    <!-- جدول من Bootstrap: تأثير hover، إطار، ظل، حواف دائرية -->
                     <table class="table table-hover border shadow-sm rounded-3 overflow-hidden">
-                        <!-- رأس الجدول: خلفية زرقاء، نص أبيض -->
                         <thead class="table-primary text-white">
                             <tr><th>الأثر التعليمي</th><th>العدد / النسبة</th></tr>
                         </thead>
-                        <!-- جسم الجدول -->
                         <tbody>
                             <tr><td>عدد الطلاب المستفيدين</td><td>1070 طالب</td></tr>
                             <tr><td>عدد الاستفادات الإجمالية</td><td>15 ألف استفادة</td></tr>
@@ -178,27 +121,19 @@
             </div>
         </section>
 
-        <!-- --- قسم فريق الإدارة --- -->
         <section id="team" class="section-box text-center">
             <h2 class="section-title">فريق الإدارة</h2>
-            <!-- حاوية فارغة سيتم ملؤها ديناميكياً باستخدام JavaScript -->
             <div class="row g-4 justify-content-center" id="team-container"></div>
         </section>
 
-        <!-- --- قسم تواصل معنا --- -->
         <section id="contact" class="section-box">
-            <!-- حاوية لتحديد عرض النموذج -->
             <div class="container" style="max-width: 800px;">
                 <h2 class="section-title text-center d-block">تواصل معنا</h2>
-                <!-- نموذج الإرسال: حشوة، خلفية بيضاء، حواف دائرية، ظل، محاذاة لليمين، إطار علوي أزرق -->
                 <form class="p-4 bg-white rounded-4 shadow-sm text-end border-top border-primary border-4">
                     <div class="row">
-                        <!-- حقل الاسم: required يعني أنه إجباري -->
                         <div class="col-md-6 mb-3"><label class="form-label fw-bold">الاسم</label><input type="text" class="form-control" placeholder="اسمك الكامل" required></div>
-                        <!-- حقل الإيميل: required يعني أنه إجباري -->
                         <div class="col-md-6 mb-3"><label class="form-label fw-bold">الايميل</label><input type="email" class="form-control" placeholder="email@test.com" required></div>
                     </div>
-                    <!-- القائمة المنسدلة لاختيار نوع الطلب -->
                     <div class="mb-3">
                         <label class="form-label fw-bold">نوع الطلب</label>
                         <select class="form-select border-primary-subtle py-2 fw-semibold">
@@ -209,9 +144,7 @@
                             <option>التسجيل في ورشة عمل</option>
                         </select>
                     </div>
-                    <!-- حقل الرسالة -->
                     <div class="mb-3"><label class="form-label fw-bold">الرسالة</label><textarea class="form-control" rows="4"></textarea></div>
-                    <!-- زر الإرسال -->
                     <button type="submit" class="btn btn-primary w-100 py-2 fw-bold">إرسال الطلب</button>
                 </form>
             </div>
@@ -220,39 +153,24 @@
     </main>
     
 
-    <!-- === بداية الفوتر (الشريط السفلي) === -->
     <footer class="py-5 bg-dark text-white text-center">
-        <!-- أيقونات التواصل الاجتماعي -->
         <div class="d-flex justify-content-center gap-4 mb-3">
             <a href="https://www.facebook.com/share/1BvRQbx2hD/" target="_blank" class="text-white social-hover"><i class="fab fa-facebook fa-2x"></i></a>
             <a href="https://www.instagram.com/alqaserspace?igsh=aXJnN2piOTN2YzM3" target="_blank" class="text-white social-hover"><i class="fab fa-instagram fa-2x"></i></a>
             <a href="https://chat.whatsapp.com/LIjFpFoWuYnHB0Jqq20bYa" target="_blank" class="text-white social-hover"><i class="fab fa-whatsapp fa-2x"></i></a>
         </div>
-        <!-- حقوق النشر -->
         <p>© 2026 Alqaser Space - تصميم ناهدة وائل الدلو</p>
     </footer>
-    <!-- === نهاية الفوتر === -->
 
-    <!-- === بداية النافذة المنبثقة (Modal) === -->
-    <!-- هذا هو هيكل النافذة، وهي مخفية بشكل افتراضي -->
+
     <div class="modal fade" id="founderModal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
-            <!-- حاوية المحتوى التي سيتم ملؤها عبر JavaScript -->
             <div class="modal-content text-center p-4 rounded-4" id="modal-body-content"></div>
         </div>
     </div>
-    <!-- === نهاية النافذة المنبثقة === -->
 
-    <!-- === بداية استدعاء ملفات JavaScript === -->
-    <!-- يجب وضعها في نهاية الـ body لضمان سرعة تحميل الصفحة -->
-    
-    <!-- استدعاء مكتبة jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
-    <!-- استدعاء ملف JavaScript الخاص بـ Bootstrap (يشمل المنطق الخاص بالمكونات مثل الـ Modal والـ Dropdown) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- استدعاء ملف الـ JavaScript المخصص الذي كتبناه -->
     <script src="js/main.js"></script>
 </body>
 </html>
